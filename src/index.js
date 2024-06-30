@@ -5,10 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 
+class Timer extends React.Component{
+  render(){
+    return <h1>It is {new Date().toLocaleString()}</h1>
+  }
+}
+
+
 const tick = () =>
   {
-    const elem = (<h1>it is {new Date().toLocaleString()}</h1>)
-    ReactDOM.createRoot(document.getElementById('root')).render(elem,)
+    ReactDOM.createRoot(document.getElementById('root')).render(<Timer/>,)
   }
 
 setInterval(() => {
