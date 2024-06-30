@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import {func} from './mogule.js'
 
 class Timer extends React.Component{
   render(){
-    return <h1>It is {new Date().toLocaleString()}</h1>
+    return <h1> the time is {new Date().toLocaleTimeString()}</h1>
   }
 }
 
