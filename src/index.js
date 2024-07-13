@@ -17,6 +17,5 @@ const tick = () =>
     ReactDOM.createRoot(document.getElementById('root')).render(<Timer/>,)
   }
 
-setInterval(() => {
-  tick()
-}, 1000);
+setInterval(() => 
+  {  tick() }, 1000);
